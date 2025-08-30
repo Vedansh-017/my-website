@@ -6,19 +6,15 @@ import adminRoutes from './routes/adminRoutes.js';
 import blogRoutes from './routes/blogRoutes.js';
 
 const app = express();
- dotenv.config();
+dotenv.config();
 // Connect to MongoDB
 connectDB();
-
-
 
 // Middleware
 app.use(cors());
 // Parse JSON bodies
 app.use(express.json());
  
-
-
 // Routes
 app.get('/', (req, res) => {
   res.send('Hello World!'); 

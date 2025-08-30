@@ -5,6 +5,7 @@ import Comment from '../models/comment.js';
 
 
 dotenv.config();
+// ye admin ko login krva rke liye , for authentication 
 export const adminLogin = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -34,7 +35,7 @@ export const adminLogin = async (req, res) => {
   }
 };
 
-
+// admin ke pass saare blog dikhane ke liye
 export const getAllBlogsAdmin = async (req,res) =>{
   try {
     const blogs = await Blog.find({}).sort({ createdAt: -1 });

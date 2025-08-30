@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import Loader from '../components/Loader';
 import { useAppContext } from '../context/AppContext';
 import toast from 'react-hot-toast';
+import '/src/index.css'
 const Blog = () => {
   const { id } = useParams();
 
